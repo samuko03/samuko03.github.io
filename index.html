@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias24/7.com</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/vector-gratis/fondo-estudio-noticias-realista_23-2149985600.jpg?t=st=1730994249~exp=1730997849~hmac=b7a18cdcd3fcac93fd0e7696112f85911689b46e6de3257a8bb053489117031b&w=740");
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center center; /* Centra la imagen */
+        }
+        header {
+            background: rgba(0, 123, 255, 0.8); /* Fondo con opacidad */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:location.reload()">UltimaHora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">funebres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">clasificados</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SUSCRIPCION
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contenido exclusivo</a></li>
+                            <li><a class="dropdown-item" href="#">sorteos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="sesion.html">Suscribirme</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Noticias 24/7</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#world">Mundo</a>
+            <a href="#sports">Deportes</a>
+            <a href="#technology">Tecnología</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="article">
+            <h2>Educación. Pruebas Aprender: el 75% alcanza o supera el conocimiento esperado en Lengua y el 63% en Matemáticas</h2>
+            <p>El Gobierno de Córdoba difundió un informe sobre las pruebas Aprender 2023, en el que el 75% de estudiantes que terminan el sexto grado de la Educación Primaria alcanzan los niveles más altos de desempeño en Lengua y el 63% en Matemáticas. Si bien los resultados oficiales se conocieron en junio, desde el Ministerio de Educación profundizaron en algunos indicadores del examen...</p>
+        </div>
+        <img src="https://www.lavoz.com.ar/resizer/v2/2B6INHZCXZHLNOK2MVZRZU53QE.jpeg?quality=75&smart=true&auth=fe23f8d6d710cc4d15c0ef83c49c2f68c4c23800d84f87ed3d8d864339781def&width=980&height=640" alt="colegio" class="img-fluid mt-3">
+    </div>
+
+    <div class="container">
+        <div class="article">
+            <h2>Explicación. Por qué falló el recibimiento de la hinchada de Instituto ante River</h2>
+            <p>El miércoles por la noche se respira aires de partido importante, grande, en el Monumental de Alta Córdoba. Instituto recibía a River Plate por la fecha 21 de la Liga Profesional. Más allá de que no se vendieron entradas a visitantes y sólo ingresan socios, se aguardaba un enorme marco de público en el estadio de la Gloria. Y así fue. Desde temprano se vio un movimiento distinto al usual en las inmediaciones de Calderón de la Barca esquina Jujuy...</p>
+        </div>
+        <img src="https://www.lavoz.com.ar/resizer/v2/6TUDTWCN7ZCMPLATBX2ELGTMF4.jpeg?quality=75&smart=true&auth=e65f4f36f288ff57c6df6776463cf90d83c224222370bf549ead05fff0ef38eb&width=980&height=640" alt="deporte" class="img-fluid mt-3">
+    </div>
+
+    <div class="container">
+        <div class="article">
+            <h2>Elecciones. Javier Milei habló con Donald Trump y viajará a EE.UU. para reunirse antes de su asunción</h2>
+            <p>El presidente de Argentina, Javier Milei, planea viajar a Estados Unidos para reunirse con Donald Trump antes de que asuma su segunda presidencia en enero. La reunión se da tras una llamada telefónica entre ambos líderes, donde acordaron conversar en persona en los próximos días...</p>
+        </div>
+        <img src="https://www.lavoz.com.ar/resizer/v2/BN3ORM56LNAPPEEWH3FA2ICKPM.jpg?quality=75&smart=true&auth=3dba7af04cd0babb6683f228a8171c7b05e60c7026e2957409395a5f5e491be5&width=980&height=640" alt="milei" class="img-fluid mt-3">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Noticias 24/7</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
