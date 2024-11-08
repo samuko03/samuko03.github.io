@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias24/7 - Suscripción</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.ofitipo.com/modules/dbblog/views/img/post/oficina-pequena-funcional.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            height: 100vh; 
+        }
+        
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .titulo-principal {
+            background-color: #007BFF; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .titulo-principal span {
+            color: #ffcc00; 
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn {
+            width: 100%;
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .social-login a {
+            width: 48%;
+            text-align: center;
+            padding: 10px;
+            background-color: #db4437; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .social-login a.facebook {
+            background-color: #3b5998; 
+        }
+        .social-login a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="titulo-principal">
+        Noticias <span>24/7</span>
+    </div>
+
+    
+    <div class="container">
+        <h2>Iniciar Sesión / Registrarse</h2>
+        <form action="/procesar-login" method="post">
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Introduce tu correo" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Introduce tu contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </form>
+
+        <p class="text-center mt-3">¿No tienes una cuenta? <a href="/registrarse">Regístrate aquí</a></p>
+
+        
+        <div class="social-login">
+            <a href="https://accounts.google.com/o/oauth2/v2/auth" target="_blank">Registrarse con Google</a>
+            <a href="https://www.facebook.com/v13.0/dialog/oauth" class="facebook" target="_blank">Registrarse con Facebook</a>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
